@@ -18,15 +18,14 @@ class CustomView : UIView {
     
     override init(frame: CGRect) {
         
-         super.init(frame: CGRect(x: 0, y: 0, width: 50, height: 20))
+         super.init(frame: CGRect(x: 0, y: 0, width: 200, height: 20))
     }
     convenience init(finalDate : String , image : UIImage , status : String , duration : String) {
         self.init()
-        layer.backgroundColor = UIColor.red.cgColor
         setupFinalDate(date: finalDate)
         setupImage(image: image)
-        //setupStatus(status: status)
-        //setupDuration(duration: duration)
+        setupStatus(status: status)
+        setupDuration(duration: duration)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -37,11 +36,11 @@ class CustomView : UIView {
         finalDate.text = date
         self.addSubview(finalDate)
         finalDate.textColor = UIColor.black
-        
+        finalDate.font = finalDate.font.withSize(14)
         finalDate.snp.makeConstraints { make in
             make.centerY.equalToSuperview()
             make.leading.equalToSuperview().offset(10)
-            make.width.equalTo(100)
+            make.width.equalTo(70)
             make.height.equalTo(20)
         }
     }
@@ -50,7 +49,7 @@ class CustomView : UIView {
         self.addSubview(callImage)
         callImage.snp.makeConstraints { make in
             make.centerY.equalToSuperview()
-            make.leading.equalTo(finalDate.snp.trailing).offset(10)
+            make.leading.equalTo(finalDate.snp.trailing).offset(50)
             make.width.equalTo(20)
             make.height.equalTo(20)
         }
@@ -58,16 +57,26 @@ class CustomView : UIView {
     }
     func setupStatus(status : String) {
         statusLabel.text = status
+        statusLabel.font = statusLabel.font.withSize(14)
         self.addSubview(statusLabel)
-        
-        
-        
-        
+        statusLabel.snp.makeConstraints { make in
+            make.centerY.equalToSuperview()
+            make.leading.equalTo(callImage.snp.trailing).offset(2)
+            make.width.equalTo(120)
+            make.height.equalTo(20)
+        }
     }
     func setupDuration(duration : String) {
         durationLabel.text = duration
         self.addSubview(durationLabel)
-        
+        durationLabel.font = durationLabel.font.withSize(14)
+        durationLabel.snp.makeConstraints { make in
+            make.centerY.equalToSuperview()
+            make.leading.equalTo(statusLabel.snp.trailing).offset(1)
+            make.width.equalTo(70)
+            make.height.equalTo(20)
+            make.trailing.equalToSuperview().offset(2)
+        }
         
     }
 }

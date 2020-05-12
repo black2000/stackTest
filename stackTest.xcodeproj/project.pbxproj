@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		FF5A4DFB246B13E3001A1A99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF5A4DFA246B13E3001A1A99 /* Assets.xcassets */; };
 		FF5A4DFE246B13E3001A1A99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF5A4DFC246B13E3001A1A99 /* LaunchScreen.storyboard */; };
 		FF5A4E06246B1628001A1A99 /* customView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5A4E05246B1628001A1A99 /* customView.swift */; };
+		FF5A4E09246B2E9B001A1A99 /* myCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5A4E07246B2E9B001A1A99 /* myCellTableViewCell.swift */; };
+		FF5A4E0A246B2E9B001A1A99 /* myCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF5A4E08246B2E9B001A1A99 /* myCellTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		FF5A4DFD246B13E3001A1A99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF5A4DFF246B13E3001A1A99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF5A4E05246B1628001A1A99 /* customView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customView.swift; sourceTree = "<group>"; };
+		FF5A4E07246B2E9B001A1A99 /* myCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myCellTableViewCell.swift; sourceTree = "<group>"; };
+		FF5A4E08246B2E9B001A1A99 /* myCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = myCellTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +60,6 @@
 				4CC12406A17A7F6BE41B7475 /* Pods-stackTest.debug.xcconfig */,
 				B88D749C668EDAEA5D8E7078 /* Pods-stackTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -88,6 +91,8 @@
 				FF5A4DFC246B13E3001A1A99 /* LaunchScreen.storyboard */,
 				FF5A4DFF246B13E3001A1A99 /* Info.plist */,
 				FF5A4E05246B1628001A1A99 /* customView.swift */,
+				FF5A4E07246B2E9B001A1A99 /* myCellTableViewCell.swift */,
+				FF5A4E08246B2E9B001A1A99 /* myCellTableViewCell.xib */,
 			);
 			path = stackTest;
 			sourceTree = "<group>";
@@ -153,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF5A4DFE246B13E3001A1A99 /* LaunchScreen.storyboard in Resources */,
+				FF5A4E0A246B2E9B001A1A99 /* myCellTableViewCell.xib in Resources */,
 				FF5A4DFB246B13E3001A1A99 /* Assets.xcassets in Resources */,
 				FF5A4DF9246B13D6001A1A99 /* Main.storyboard in Resources */,
 			);
@@ -208,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF5A4DF6246B13D6001A1A99 /* ViewController.swift in Sources */,
+				FF5A4E09246B2E9B001A1A99 /* myCellTableViewCell.swift in Sources */,
 				FF5A4E06246B1628001A1A99 /* customView.swift in Sources */,
 				FF5A4DF4246B13D6001A1A99 /* AppDelegate.swift in Sources */,
 			);
